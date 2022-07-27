@@ -65,9 +65,36 @@ main {
     align-items: center;
     background-color: rgb(28, 28, 28);
 }
+
 .right-container{
     flex-grow: 5;
+    background-image: url("./img/login-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.right-container h1{
+    font-size: 3rem;
+    color: white;
+}
+
+.right-container-btn{
+    border: 1px solid white;
+    padding: 10px 130px;
+    border-radius: 1px;
+    font-size: 1.1rem;
+    transition: 0.5s;
+}
+
+.right-container-btn:hover{
+    color: rgb(234, 109, 0);
+    border: 1px solid rgb(234, 109, 0);
+}
+
 
 .login-logo{
    width: 310px;  
@@ -150,3 +177,58 @@ footer div a{
     color: rgb(238, 78, 15);
     text-decoration: underline;
 }
+
+
+
+@media screen and (max-width: 1200px){
+    .right-container h1{
+        font-size: 2.5rem;
+    }
+    
+    .right-container-btn{
+        padding: 10px 100px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .right-container h1{
+        font-size: 2rem;
+    }
+    
+    .right-container-btn{
+        padding: 10px 80px;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .right-container h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .right-container h1{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .right-container-btn{
+        padding: 10px 60px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 750px){
+    .right-container{
+        display: none;
+    }
+}
+
+
